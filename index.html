@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codificacion Cesar | Online</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Codificacion Cesar 🎈🎈
+            </h1>
+            <h2 class="subtitle">
+                Licencia MIT ® | Andrés Vizcaíno
+            </h2>
+          </div>
+        </div>
+      </section>
+
+
+    <div id="app" class="container">
+        <div class="notification">
+
+
+          <div class="columns">
+            <div class="column is-four-fifths">
+                    
+          <div class="field">
+            <label class="label">Texto original:</label>
+            <div class="control">
+              <input class="input" type="text" v-model="descod">
+            </div>
+          </div>
+
+            </div>
+
+            <div class="column">
+                <div class="field">
+                    <label class="label"># Desplazamientos:</label>
+                    <div class="control">
+                      <input class="input" type="number" v-model.number="des" min="1" max="10">
+                    </div>
+                  </div>        
+        
+            </div>
+          </div>
+
+        <article class="message  is-primary">
+            <div class="message-header">
+              <p>Cifrado Cesar</p>
+            </div>
+            <div class="message-body ">
+                
+                <p class="is-size-3	"> {{cesar}} </p>
+            </div>
+          </article>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
